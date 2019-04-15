@@ -1,0 +1,38 @@
+html
+    head
+        meta(charset='utf-8', meta='', name = 'viewport', content = 'device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+
+        include head.pug
+    body
+
+.modal-dialog.text-center
+    .cool-sm-6.main-section
+        .modal-content
+            .col-12.tittle-login
+                br
+
+                h4.modal-title.w-100.font-weight-bold Sign In
+                br
+                .modal-footer.d-flex.justify-content-center
+                .form-group.col-10-center
+                    label
+                    input.form-control(type='email',class="form-control", aria-describedby='emailHelp', placeholder='Enter Email')
+                .form-group.col-10-center
+                    label
+                    input.form-control(type='password', placeholder='Password')
+                    <br>
+                    form(action="/registrasi/")
+
+                        a.btn.btn-warning(href='#') LOGIN
+                        .col-auto.my-1
+                            .form-check
+                                input#autoSizingCheck2.form-check-input-font(type='checkbox')
+                                label.form-check-label(for='autoSizingCheck2')
+                                    | Remember me
+                        hr
+                        button.btn.btn-warning(type='submit') Create New Account
+                        small#emailHelp.form-text.text-font if you don't have an account.
+                        hr
+

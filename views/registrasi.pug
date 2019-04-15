@@ -1,0 +1,29 @@
+html
+    head
+        include head.pug
+    body
+    form(action="/")
+    center
+
+        .modal-dialog.text-center
+            .cool-sm-12.main-section
+                .modal-content
+                    .col-sm-12.tittle-login-center
+                        br
+                        h2 Create New Account
+                        br
+                        form(action="/")
+                            .form-group
+                                input.form-control(type='text', placeholder='User Name')
+                            .form-group
+                                input.form-control(type='text', placeholder='Email Address')
+                            .form-group
+                                input.form-control(type='password', placeholder='Password')
+                            .form-group
+                                input.form-control(type='email', placeholder='Confirm Password')
+
+                            form(action="/")
+                                a.btn.btn-warning(href='#') Create New Account
+                                hr
+                                button.btn.btn-warning(type='submit') Sign In
+
